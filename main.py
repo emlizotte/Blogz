@@ -96,7 +96,7 @@ def login():
         if user and user.password == password:
             session['email'] = email
             flash("Logged in")
-            return redirect('/')
+            return redirect('/index')
         else:
             flash('User password incorrect, or user does not exist', 'error')
 
